@@ -6,7 +6,7 @@ module.exports = (app, axios, csv) => {
                 // var alldata = CircularJSON.stringify(data.data.rates);
                 var alldata = (data.data.rates)
                 // console.log(alldata);
-                csv().fromFile('./donation.csv')
+                csv().fromFile('./csv/donation.csv')
                 .then((data) => {
                     // res.send(data);
                     for (var i of data){
